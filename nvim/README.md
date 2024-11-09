@@ -16,8 +16,9 @@ cp -r nvim ~/.config
 nvim
 ```
 
-执行该命令后，会自动安装插件，耐心等待即可.
+After executing this command, the plugins will be installed automatically.
+Please be patient.
 
 [!WARNING]
 
-> 确保nvim版本大于等于0.9
+> ensure the version of nvim is greater than 0.9!
