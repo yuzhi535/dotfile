@@ -1,6 +1,14 @@
 return {
-  "hardhackerlabs/theme-vim",
-  config = function()
-    vim.cmd.colorscheme("hardhacker")
-  end,
+  {
+    "navarasu/onedark.nvim",
+    opts = {
+      style = "cool",
+    },
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "onedark",
+    },
+  },
 }
