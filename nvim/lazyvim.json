@@ -1,11 +1,11 @@
 {
   "extras": [
+    "lazyvim.plugins.extras.ai.copilot-chat",
     "lazyvim.plugins.extras.coding.blink",
-    "lazyvim.plugins.extras.coding.copilot",
-    "lazyvim.plugins.extras.coding.copilot-chat",
     "lazyvim.plugins.extras.coding.yanky",
     "lazyvim.plugins.extras.formatting.prettier",
     "lazyvim.plugins.extras.lang.git",
+    "lazyvim.plugins.extras.lang.go",
     "lazyvim.plugins.extras.lang.json",
     "lazyvim.plugins.extras.lang.markdown",
     "lazyvim.plugins.extras.lang.python",
@@ -20,7 +20,7 @@
     "lazyvim.plugins.extras.util.project"
   ],
   "news": {
-    "NEWS.md": "7107"
+    "NEWS.md": "10960"
   },
-  "version": 6
+  "version": 7
 }

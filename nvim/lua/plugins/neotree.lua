@@ -34,21 +34,30 @@ return {
           end,
           desc = "Open with System Application",
         },
-        ["P"] = { "toggle_preview", config = { use_float = false, use_image_nvim = true } },
+        -- ["p"] = { "toggle_preview", config = { use_float = false, use_image_nvim = true } },
+        -- ["p"] = "image_preview", -- " or another map
       },
     },
-    default_component_configs = {
-      indent = {
-        with_expanders = true, -- if nil and file nesting is enabled, will enable expanders
-        expander_collapsed = "",
-        expander_expanded = "",
-        expander_highlight = "NeoTreeExpander",
-      },
-      git_status = {
-        symbols = {
-          unstaged = "󰄱",
-          staged = "󰱒",
-        },
+  },
+  commands = {
+    image_wezterm = function(state)
+      local node = state.tree:get_node()
+      if node.type == "file" then
+        require("image_preview").PreviewImage(node.path)
+      end
+    end,
+  },
+  default_component_configs = {
+    indent = {
+      with_expanders = true, -- if nil and file nesting is enabled, will enable expanders
+      expander_collapsed = "",
+      expander_expanded = "",
+      expander_highlight = "NeoTreeExpander",
+    },
+    git_status = {
+      symbols = {
+        unstaged = "󰄱",
+        staged = "󰱒",
       },
     },
   },
