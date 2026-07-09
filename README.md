@@ -5,6 +5,7 @@ This is my configuration files for my development environment, which includes:
 - nvim
 - kitty
 - zsh
+- zellij
 - ...
 
 ## Installation
